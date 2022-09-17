@@ -1,0 +1,25 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "tour website AI-based",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahmoudfouadweb/advanced-css-course-master-SASS.git#master"
+  },
+  "keywords": [
+    "SASS"
+  ],
+  "author": "Mahmoud Fouad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahmoudfouadweb/advanced-css-course-master-SASS/issues"
+  },
+  "homepage": "https://github.com/mahmoudfouadweb/advanced-css-course-master-SASS/tree/master#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
