@@ -3,17 +3,14 @@
 *::before {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html {
+  // this defines what 1rem is
   font-size: 62.5%;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: $color-gray-dark;
-  padding: 2rem;
+  box-sizing: border-box;
 }
