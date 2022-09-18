@@ -2,7 +2,7 @@ $color-primary: #55c57a;
 $color-primary-dark: #28b485;
 $color-primary-light: #7ed56f;
 
-$color-gray-dark: $color-gray-dark;
+$color-gray-dark: #777;
 $color-white: #fff;
 $color-black: #000;
 
@@ -61,7 +61,7 @@ body {
   text-align: center;
 }
 
-.heading-praimary {
+.heading-primary {
   color: $color-white;
   text-transform: uppercase;
   margin-bottom: 6rem;
@@ -80,7 +80,6 @@ body {
   /*
    animation-delay: 3s; 
   animation-iteration-count: 1;
-  
   */
 }
 .heading-primary--sub {
@@ -149,13 +148,12 @@ body {
   box-shadow: 0 5px 10px rgba($color-black, 0.2);
 }
 
-.btn-white {
+.btn--white {
   background-color: $color-white;
   color: $color-gray-dark;
 }
 
 .btn::after {
-  content: '';
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -164,6 +162,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+  content: '';
   transition: all 0.4s;
 }
 
