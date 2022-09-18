@@ -25,49 +25,44 @@ body {
   /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); */
   clip-path: polygon(0px 0px, 100% 0px, 100% 75vh, 0px 100%);
   position: relative; }
-
-.header__logo-box {
-  position: absolute;
-  top: 40px;
-  left: 40px; }
-
-.header__logo {
-  height: 35px; }
-
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
+  .header__logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px; }
+  .header__logo {
+    height: 35px; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 6rem;
   backface-visibility: hidden; }
-
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 35px;
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  /*
-   animation-delay: 3s; 
-  animation-iteration-count: 1;
-  */ }
-
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 17.4px;
-  animation-name: moveInRight;
-  animation-timing-function: ease-out;
-  animation-duration: 1s; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 35px;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    /*
+     animation-delay: 3s; 
+    animation-iteration-count: 1;
+    */ }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+    animation-name: moveInRight;
+    animation-timing-function: ease-out;
+    animation-duration: 1s; }
 
 @keyframes moveInLeft {
   0% {
@@ -89,8 +84,7 @@ body {
     opacity: 1;
     transform: translateX(0); } }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -131,6 +125,14 @@ body {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0; }
 
+.btn--animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+  /* animation-name: moveInBottom;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out; */
+  /* animation-delay: 0.75s; */ }
+
 @keyframes moveInBottom {
   0% {
     opacity: 0;
@@ -138,11 +140,3 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0); } }
-
-.btn--animated {
-  animation: moveInBottom 0.5s ease-out 0.75s;
-  animation-fill-mode: backwards;
-  /* animation-name: moveInBottom;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-out; */
-  /* animation-delay: 0.75s; */ }
